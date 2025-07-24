@@ -1,0 +1,163 @@
+#input-tip,
+.input-tip {
+  color: #4a6073;
+  font-size: 0.98rem;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  text-align: center;
+  opacity: 0.85;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(120deg, #74ebd5 0%, #acb6e5 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 48px auto;
+  background: rgba(255, 255, 255, 0.97);
+  padding: 32px 24px 28px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #2d3a4b;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#weather-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1.5px solid #74ebd5;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+#city-input:focus {
+  border: 1.5px solid #007bff;
+}
+
+#weather-form button {
+  background: linear-gradient(90deg, #74ebd5 0%, #acb6e5 100%);
+  color: #2d3a4b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#weather-form button:hover {
+  background: linear-gradient(90deg, #acb6e5 0%, #74ebd5 100%);
+  color: #007bff;
+}
+
+.weather-result {
+  margin-top: 10px;
+  padding: 18px 0 10px 0;
+  border-radius: 12px;
+  background: #f7fafc;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  min-height: 60px;
+  transition: box-shadow 0.2s;
+}
+.weather-result p {
+  margin: 6px 0;
+  color: #4a6073;
+  font-size: 1.08rem;
+}
+.weather-result .temp {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 8px 0 2px 0;
+}
+.weather-result .desc {
+  font-size: 1.1rem;
+  color: #2d3a4b;
+  margin-bottom: 4px;
+}
+
+.user-card {
+  margin-bottom: 24px;
+  padding: 18px 0 10px 0;
+  border-radius: 12px;
+  background: #f7fafc;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.user-card:hover {
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+}
+
+.user-card img {
+  border-radius: 50%;
+  margin-bottom: 14px;
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 4px solid #74ebd5;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+}
+
+.user-card h2 {
+  margin: 8px 0 6px 0;
+  font-size: 1.3rem;
+  color: #2d3a4b;
+}
+
+.user-card p {
+  margin: 4px 0;
+  color: #4a6073;
+  font-size: 1rem;
+}
+
+#new-user-btn {
+  background: linear-gradient(90deg, #74ebd5 0%, #acb6e5 100%);
+  color: #2d3a4b;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.08rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+#new-user-btn:hover {
+  background: linear-gradient(90deg, #acb6e5 0%, #74ebd5 100%);
+  color: #007bff;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.18);
+}
+
+@media (max-width: 500px) {
+  .container {
+    max-width: 98vw;
+    padding: 16px 4vw 18px 4vw;
+  }
+  .user-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
