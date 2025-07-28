@@ -1,6 +1,6 @@
 document
 
-// Utilitário para buscar latitude/longitude pelo nome da cidade (usando Open-Meteo Geocoding)
+
 async function getLatLon(city) {
   const res = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=pt&format=json`);
   const data = await res.json();
@@ -16,7 +16,7 @@ async function getLatLon(city) {
   }
 }
 
-// Buscar previsão do tempo atual
+
 async function getWeather(lat, lon) {
   const res = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&timezone=auto&lang=pt`);
   const data = await res.json();
@@ -27,7 +27,6 @@ async function getWeather(lat, lon) {
   }
 }
 
-// Manipular formulário
 document.getElementById('weather-form').addEventListener('submit', async function(e) {
   e.preventDefault();
   const city = document.getElementById('city-input').value.trim();
